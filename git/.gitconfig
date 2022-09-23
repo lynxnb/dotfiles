@@ -1,0 +1,24 @@
+[user]
+        email = niccolo.betto@gmail.com
+        name = lynxnb
+[core]
+        symlinks = true
+        autocrlf = input
+        editor = code --wait
+[pull]
+        rebase = true
+[init]
+        defaultBranch = master
+[alias]
+        uncommit = reset HEAD^
+        tree = log --oneline --graph --color --all --decorate
+[credential]
+        helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager-core.exe
+[merge]
+        tool = vscode
+[mergetool "vscode"]
+        cmd = code --wait $MERGED
+[diff]
+        tool = vscode
+[difftool "vscode"]
+        cmd = code --wait --diff $LOCAL $REMOTE
